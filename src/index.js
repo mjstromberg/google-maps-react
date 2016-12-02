@@ -149,7 +149,12 @@ export class Map extends React.Component {
           disableDoubleClickZoom: this.props.disableDoubleClickZoom,
           noClear: this.props.noClear,
           styles: this.props.styles,
-          gestureHandling: this.props.gestureHandling
+          gestureHandling: this.props.gestureHandling,
+          fullScreenControl: this.props.fullScreenControl,
+          fullScreenControlOptions: this.props.fullScreenControlOptions,
+          mapTypeControlOptions: this.props.mapTypeControlOptions,
+          streetView: this.props.streetView,
+          zoomControlOptions: this.zoomControlOptions
         });
 
         Object.keys(mapConfig).forEach((key) => {
@@ -271,7 +276,12 @@ Map.propTypes = {
   disableDoubleClickZoom: T.bool,
   noClear: T.bool,
   styles: T.array,
-  gestureHandling: T.string
+  gestureHandling: T.string,
+  fullScreenControl: T.bool,
+  fullScreenControlOptions: T.string,
+  mapTypeControlOptions: T.string,
+  streetView: T.bool,
+  zoomControlOptions: T.string
 }
 
 evtNames.forEach(e => Map.propTypes[camelize(e)] = T.func)

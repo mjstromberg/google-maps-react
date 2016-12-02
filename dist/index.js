@@ -239,7 +239,12 @@
               disableDoubleClickZoom: _this4.props.disableDoubleClickZoom,
               noClear: _this4.props.noClear,
               styles: _this4.props.styles,
-              gestureHandling: _this4.props.gestureHandling
+              gestureHandling: _this4.props.gestureHandling,
+              fullScreenControl: _this4.props.fullScreenControl,
+              fullScreenControlOptions: _this4.props.fullScreenControlOptions,
+              mapTypeControlOptions: _this4.props.mapTypeControlOptions,
+              streetView: _this4.props.streetView,
+              zoomControlOptions: _this4.zoomControlOptions
             });
 
             Object.keys(mapConfig).forEach(function (key) {
@@ -380,7 +385,12 @@
     disableDoubleClickZoom: _react.PropTypes.bool,
     noClear: _react.PropTypes.bool,
     styles: _react.PropTypes.array,
-    gestureHandling: _react.PropTypes.string
+    gestureHandling: _react.PropTypes.string,
+    fullScreenControl: _react.PropTypes.bool,
+    fullScreenControlOptions: _react.PropTypes.string,
+    mapTypeControlOptions: _react.PropTypes.string,
+    streetView: _react.PropTypes.bool,
+    zoomControlOptions: _react.PropTypes.string
   };
 
   evtNames.forEach(function (e) {
